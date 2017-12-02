@@ -8,20 +8,62 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/doc1"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="150dp">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/doc2"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/doc3"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/sanitationdoc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aditya&#10; 32" />
+
+            <Button
+                android:id="@+id/sanitationdoc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Utkarsh&#10; 34" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp">
+            <Button
+                android:id="@+id/sanitationdoc3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Abhishek&#10; 36" />
+
+            <Button
+                android:id="@+id/sanitationdoc4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sachin&#10; 35" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp">
+            <Button
+                android:id="@+id/sanitationdoc5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="kanishk&#10; 33" />
+
+            <Button
+                android:id="@+id/sanitationdoc6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ayush&#10; 31" />
+            </LinearLayout>
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
