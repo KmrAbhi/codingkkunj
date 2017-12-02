@@ -18,11 +18,23 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class LoginActivity extends AppCompatActivity {
+    TextView UserName,ChatRoom;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        UserName =(TextView)findViewById(R.id.username);
+        ChatRoom=(TextView)findViewById(R.id.chatroom);
+        if(getIntent().getExtras()!=null)
+        {
+            for(String key : getIntent().getExtras().keySet()){
+                if(key.equals("username"))
+                    UserName.setText(getIntent().getExtras().getString(key));
+                else if(key.equals("room"))
+                    ChatRoom.setText(getIntent().getExtras().getString(key));
+            }
+        }
         final EditText loginusername=(EditText)findViewById(R.id.loginusername);
         final EditText loginpassword=(EditText)findViewById(R.id.loginpassword);
 
@@ -47,9 +59,17 @@ public class LoginActivity extends AppCompatActivity {
                     public void onResponse(String response){
                         try {
                             JSONObject jsonResponse = new JSONObject(response);
-                            boolean success =jsonResponse.getBoolean("success");
+                            boolean success=jsonResponse.getBoolean("success");
                             if(success){
+                                Bundle b = new Bundle();
+                                String username=UserName.getText().toString();
+                                String chatroom = ChatRoom.getText().toString();
                                 Intent i = new Intent(LoginActivity.this,ChatArea.class);
+                                b.putString("username",username);
+                                b.putString("room",chatroom);
+                                i.putExtras(b);
+                                startActivity(i);
+
                                 LoginActivity.this.startActivity(i);
                             }
                             else{

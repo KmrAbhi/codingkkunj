@@ -12,7 +12,7 @@ import java.util.Map;
  */
 
 public class LoginRequest extends StringRequest {
-    private static final String LOGIN_REQUEST_URL = "https://safe-ridge-67914.herokuapp.com/login";
+    private static final String LOGIN_REQUEST_URL = "https://secret-meadow-16362.herokuapp.com/login";
     private Map<String, String> params;
 
     public LoginRequest(String username, String password, Response.Listener<String> listener) {
