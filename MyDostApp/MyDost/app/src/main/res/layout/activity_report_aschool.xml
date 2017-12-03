@@ -17,7 +17,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="School Name"/>
+                android:text="School Name" />
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -36,7 +36,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="City"
-                android:id="@+id/schoolcity"/>
+                android:id="@+id/city"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -49,13 +49,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="State"
-                android:id="@+id/schoolstate"/>
+                android:id="@+id/state"/>
         </LinearLayout>
+
         <Button
+            android:id="@+id/schoolsubmit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Submit"
-            android:id="@+id/schoolsubmit"/>
+            android:text="Submit" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

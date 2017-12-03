@@ -4,39 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.mydost.Emergency">
+    tools:context="com.example.android.mydost.Emergency"
+    android:background="@drawable/sun">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        >
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
 
         <Button
             android:id="@+id/policehelpline"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginHorizontal="140dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
             android:background="@drawable/homepagebuttonshape"
-            android:text="Police Helpline" />
+            android:text="Police Helpline"
+            android:textSize="18dp"/>
 
         <Button
             android:id="@+id/womanhelpline"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginHorizontal="140dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
             android:background="@drawable/homepagebuttonshape"
-            android:text="woman Helpline" />
+            android:text="woman Helpline"
+            android:textSize="18dp"/>
 
         <Button
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
             android:id="@+id/chilehelpline"
-            android:layout_marginHorizontal="140dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="50dp"
             android:background="@drawable/homepagebuttonshape"
-            android:text="Child Helpline"/>
+            android:text="Child Helpline"
+            android:textSize="18dp"/>
     </LinearLayout>
+    </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

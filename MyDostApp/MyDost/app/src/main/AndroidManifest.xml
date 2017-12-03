@@ -46,7 +46,8 @@
         <activity android:name=".Pregnancy" />
         <activity android:name=".GeneralHealth" />
         <activity android:name=".ChatWindow" />
-        <activity android:name=".ChatConfirmation"></activity>
+        <activity android:name=".ChatConfirmation" />
+        <activity android:name=".DummyMainActivity"></activity>
     </application>
 
 </manifest>

@@ -4,52 +4,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.mydost.ChildHelpline">
+    tools:context="com.example.android.mydost.ChildHelpline"
+    android:background="@drawable/sun">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
 
         <Button
             android:id="@+id/childlabour"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
             android:background="@drawable/homepagebuttonshape"
-            android:text="Child Labour" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:text="Child Labour"
+            android:textSize="18dp"/>
 
             <Button
                 android:id="@+id/childharassment"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
                 android:background="@drawable/homepagebuttonshape"
-                android:text="Child Harassment" />
+                android:text="Child Harassment"
+                android:textSize="18dp"
+                android:layout_marginTop="30dp"/>
 
             <Button
                 android:id="@+id/reportaschool"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
                 android:background="@drawable/homepagebuttonshape"
-                android:text="Report a School" />
-        </LinearLayout>
+                android:text="Report a School"
+                android:textSize="18dp"
+                android:layout_marginTop="30dp"/>
 
         <Button
             android:id="@+id/reportanorphanage"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
             android:background="@drawable/homepagebuttonshape"
-            android:text="Report an Orphanage" />
+            android:text="Report an Orphanage"
+            android:textSize="18dp"
+            android:layout_marginTop="30dp"/>
 
         <Button
             android:id="@+id/reportahospital"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
             android:background="@drawable/homepagebuttonshape"
-            android:text="Report a Hospital" />
+            android:text="Report a Hospital"
+            android:textSize="18dp"
+            android:layout_marginTop="30dp"/>
     </LinearLayout>
+    </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

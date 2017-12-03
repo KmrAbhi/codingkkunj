@@ -31,9 +31,7 @@ public class ChatConfirmation extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 final String userid = Userid.getText().toString();
-                final String chatroom = username+userid;
-
-        com.android.volley.Response.Listener<String> responseListener = new com.android.volley.Response.Listener<String>() {
+                com.android.volley.Response.Listener<String> responseListener = new com.android.volley.Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 try {
@@ -42,11 +40,7 @@ public class ChatConfirmation extends AppCompatActivity {
                     Log.d("textbefr",userid);
                     if (success) {
                         Log.d("txt",userid);
-                        Bundle b = new Bundle();
-                        b.putString("username",username);
-                        b.putString("chatroom",chatroom);
-                        Intent i =new Intent(ChatConfirmation.this,ChatWindow.class);
-                        i.putExtras(b);
+                        Intent i =new Intent(ChatConfirmation.this,DummyMainActivity.class);
                         startActivity(i);
 
                     } else {
